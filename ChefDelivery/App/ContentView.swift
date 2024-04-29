@@ -10,13 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Teste")
-            Text("Teste")
+            NavigationBar()
+                .padding(.horizontal, 15)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    OrderTypeGridView()
+                    CarouselTabView()
+                }
+            }
         }
     }
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
     ContentView()
-        .previewLayout(.sizeThatFits)
 }
