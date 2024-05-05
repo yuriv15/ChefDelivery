@@ -13,7 +13,7 @@ struct ContentView: View {
             VStack(spacing: 0) {
                 NavigationBar()
                     .padding(.horizontal, 15)
-                    .padding(.top,10)
+                    .padding(.top, 10)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 20) {
